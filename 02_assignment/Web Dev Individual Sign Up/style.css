@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5f2f0;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  display: none;
+}
+
+.mobile-header img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 8px;
+  margin-right: 88px;
+  margin-left: 88px;
+}
+
+main {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem;
+  font-family: "Poiret+One", sans-serif;
+}
+
+.signup-caption {
+  width: 460px;
+  height: 275px;
+  margin-top: 8rem;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+.signup-caption > img {
+  width: 77px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.paragraph-desktop-view {
+  color: #737373;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.paragraph-mobile-view {
+  display: none;
+}
+
+.register-button {
+  background-color: #2ec4b6;
+  color: #ffffff;
+  border: none;
+  width: 29rem;
+  height: 48px;
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
+}
+
+.name,
+.gender-dob,
+.measurement {
+  display: flex;
+  margin-bottom: 25px;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+input,
+#gender {
+  width: 13rem;
+  height: 2.7rem;
+}
+
+#activity,
+#password {
+  width: 29rem;
+  height: 48px;
+  margin-bottom: 25px;
+}
+
+.password {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 55%;
+  right: 46px;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.a-p-r {
+  width: 33rem;
+  padding-left: 2rem;
+}
+
+span a {
+  color: #2ec4b6;
+}
+
+.mobile-footer {
+  margin-left: 24px;
+  display: none;
+}
+
+.desktop-footer {
+  margin-top: 16px;
+}
+
+.mobile-statusbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 425px) {
+  main {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .paragraph-desktop-view {
+    display: none;
+  }
+
+  .paragraph-mobile-view {
+    display: block;
+    width: 23rem;
+    color: #737373;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  input,
+  #gender {
+    width: 20rem;
+    height: 2.7rem;
+  }
+
+  .name,
+  .gender-dob,
+  .measurement {
+    flex-direction: column;
+  }
+
+  .a-p-r {
+    width: 20rem;
+    padding-left: 0;
+  }
+
+  #activity,
+  #password {
+    width: 20rem;
+    height: 48px;
+    margin-bottom: 25px;
+  }
+
+  button.register-button {
+    width: 320px;
+  }
+
+  #togglePassword {
+    right: 16px;
+  }
+
+  .mobile-footer {
+    display: block;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    font-size: 14px;
+  }
+
+  .desktop-footer {
+    display: none;
+  }
+
+  .signup-caption {
+    width: 23rem;
+    margin-top: 4rem;
+  }
+
+  form {
+    background-color: #ffffff;
+    padding: 1em;
+    width: 22rem;
+  }
+
+  .mobile-statusbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-icon, .right-icon {
+    max-width: 30px; 
+    height: auto;
+  }
+}

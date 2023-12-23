@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Training Signup for Individuals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Ephesis&family=Lato:wght@400;900&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="mobile-statusbar">
+      <img src="assets/↳ Time.png" class="left-icon" />
+      <img src="assets/Container.png" class="right-icon" />
+    </div>
+    <main>
+      <div class="signup-caption">
+        <img src="assets/Logo (1).png" alt="logo" />
+        <h3>For Individuals</h3>
+        <p class="paragraph-desktop-view">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+        <p class="paragraph-mobile-view">
+          Inspiring wholesome harmony for the mind, body and spirit, for
+          everyone, everywhere.
+        </p>
+      </div>
+      <div class="signup">
+        <form action="/" method="post">
+          <div class="name">
+            <div>
+              <label for="first_name">First Name</label>
+              <br />
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="Tolu"
+              />
+            </div>
+
+            <div>
+              <label for="last_name">Last Name</label>
+              <br />
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+          </div>
+
+          <div class="gender-dob">
+            <div>
+              <label for="gender">Gender</label>
+              <br />
+              <select id="gender" name="gender">
+                <option value="" disabled selected>Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth</label>
+              <br />
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                placeholder="Select here"
+              />
+            </div>
+          </div>
+
+          <div class="measurement">
+            <div>
+              <label for="Weight">Weight(KG)</label>
+              <br />
+              <input
+                type="number"
+                id="weight"
+                name="weight"
+                placeholder="Enter Weight"
+                min="0"
+                step="any"
+              />
+            </div>
+
+            <div>
+              <label for="height">Height(CM)</label>
+              <br />
+              <input
+                type="number"
+                id="height"
+                name="height"
+                placeholder="Enter Height here..."
+                min="0"
+                step="any"
+              />
+            </div>
+          </div>
+          <div class="a-p-r">
+            <div class="activity">
+              <label for="activity_level">Activity Level</label>
+              <br />
+              <select id="activity" name="activity">
+                <option value="" disabled selected>Select here</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <br />
+                <input type="password" id="password" name="password" required />
+                <button type="button" id="togglePassword">
+                  <img
+                    src="assets/eye_icon.png"
+                    alt="Toggle Password Visibility"
+                  />
+                </button>
+              </div>
+
+              <button type="submit" class="register-button">Register</button>
+          </div>
+          <p class="desktop-footer">
+            By clicking Register, you agree to our
+            <span><a href="#">Terms of Use</a></span> and our
+            <span><a href="#">Privacy Policy</a></span>
+          </p>
+        </form>
+
+        <p class="mobile-footer">
+          By clicking Register, you agree to our
+          <span><a href="#">Terms of Use</a></span> and our
+          <span><a href="#">Privacy Policy</a></span>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
